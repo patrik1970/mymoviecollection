@@ -63,6 +63,7 @@ session_start();
 ?>			
 		<div id="header">
 			<h1>My Moviecollection</h1>
+			<p><a href="https://github.com/patrik1970/mymoviecollection.git" target="_blank" class = "external">Click here to see code in GitHub</a></p>
 			<ul id="nav" >
 				<!--The class show the value in the variable.-->
 				<li><a class="<?php echo $index; ?>" href="index.php">Start</a></li>
