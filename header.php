@@ -66,8 +66,8 @@ session_start();
 			<p><a href="https://github.com/patrik1970/mymoviecollection.git" target="_blank" class = "external">Click here to see code in GitHub</a></p>
 			<ul id="nav" >
 				<!--The class show the value in the variable.-->
-				<li><a class="<?php echo $index; ?>" href="index.php">Start</a></li>
-				<li><a class="<?php echo $filmer; ?>" href="filmer.php">Movie</a></li>
+				<li><a class="<?php echo $index; ?>" href="index.php">Home</a></li>
+				<li><a class="<?php echo $filmer; ?>" href="movies.php">Movie</a></li>
 				<li><a class="<?php echo $filmtips; ?>" href="filmtips.php">Movie Tips</a></li>
 				<li><a class="<?php echo $gastbok; ?>" href="gastbok.php">Guestbook</a></li>
 				<li><a class="<?php echo $om; ?>" href="om.php">About My Moviecollection</a></li>
