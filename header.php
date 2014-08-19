@@ -68,7 +68,7 @@ session_start();
 				<!--The class show the value in the variable.-->
 				<li><a class="<?php echo $index; ?>" href="index.php">Home</a></li>
 				<li><a class="<?php echo $filmer; ?>" href="movies.php">Movie</a></li>
-				<li><a class="<?php echo $filmtips; ?>" href="filmtips.php">Movie Tips</a></li>
+				<li><a class="<?php echo $filmtips; ?>" href="movietips.php">Movie Tips</a></li>
 				<li><a class="<?php echo $gastbok; ?>" href="gastbok.php">Guestbook</a></li>
 				<li><a class="<?php echo $om; ?>" href="om.php">About My Moviecollection</a></li>
 				<li><a class="<?php echo $kontakt; ?>" href="kontakt.php">Contact</a></li>
