@@ -23,7 +23,7 @@ include ("header.php");
 		<ul id="gastut">
 <?php
 			//Connection to the database.
-			$db = mysqli_connect("localhost","m11p0652","qwerty","m11p0652");
+			$db = mysqli_connect("Server(host)","Username","Password","Database");
 			
 			//The SQL question to get all the data from the table gest.
 			$sql = mysqli_query($db, "SELECT * FROM gest ORDER BY id DESC");
