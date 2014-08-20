@@ -71,7 +71,7 @@ session_start();
 				<li><a class="<?php echo $filmtips; ?>" href="movietips.php">Movie Tips</a></li>
 				<li><a class="<?php echo $gastbok; ?>" href="guestbook.php">Guestbook</a></li>
 				<li><a class="<?php echo $om; ?>" href="about.php">About</a></li>
-				<li><a class="<?php echo $kontakt; ?>" href="kontakt.php">Contact</a></li>
+				<li><a class="<?php echo $kontakt; ?>" href="contact.php">Contact</a></li>
 <?php
 				//Check the logout function.
 				//The if-statement check if something is in the logout.
