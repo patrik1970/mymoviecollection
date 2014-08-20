@@ -70,7 +70,7 @@ session_start();
 				<li><a class="<?php echo $filmer; ?>" href="movies.php">Movie</a></li>
 				<li><a class="<?php echo $filmtips; ?>" href="movietips.php">Movie Tips</a></li>
 				<li><a class="<?php echo $gastbok; ?>" href="guestbook.php">Guestbook</a></li>
-				<li><a class="<?php echo $om; ?>" href="om.php">About My Moviecollection</a></li>
+				<li><a class="<?php echo $om; ?>" href="about.php">About</a></li>
 				<li><a class="<?php echo $kontakt; ?>" href="kontakt.php">Contact</a></li>
 <?php
 				//Check the logout function.
