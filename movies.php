@@ -21,25 +21,25 @@ include ("header.php");
 			
 				//Show the movieinformation from GET.
 				for($i=0;$i<$length;$i++)//Loops through the movie list.
-                {
-					$filmInfo = explode(";", $filmlista_array[$i]);
-                    if(($_GET['title']) == $filmInfo[0])
-                    {
+                	{
+			$filmInfo = explode(";", $filmlista_array[$i]);
+                    	if(($_GET['title']) == $filmInfo[0])
+                    	{
                         echo "<h3>".$filmInfo[0]."</h3>";
-						echo "<span><img src=".$filmInfo[3]." alt=".$filmInfo[0]."></span>";
-						echo "<p>".$filmInfo[4]."</p>";
-						echo "<p><b>Betyg: </b>".$filmInfo[1]."</p>";
-						echo "<p><b>Länk till IMDB: </b><a href=".$filmInfo[2].">$filmInfo[2]</a>";
-					}
+			echo "<span><img src=".$filmInfo[3]." alt=".$filmInfo[0]."></span>";
+			echo "<p>".$filmInfo[4]."</p>";
+			echo "<p><b>Betyg: </b>".$filmInfo[1]."</p>";
+			echo "<p><b>Länk till IMDB: </b><a href=".$filmInfo[2].">$filmInfo[2]</a>";
+			}
                 }
-				else
+			else
 				//Shows the movies and rating and make them into Links.
 				for($i=0;$i<$length;$i++)//Loops through the movie list.
                 {
                     $movie = explode(";", $filmlista_array[$i]);
                     if(isset($movie[1]))
                     {
-						echo "<li><a href="."filmer.php?title=".rawurlencode($movie[0]).">".$movie[0]."<span>".$movie[1]."</span></a></li>";
+			echo "<li><a href="."filmer.php?title=".rawurlencode($movie[0]).">".$movie[0]."<span>".$movie[1]."</span></a></li>";
                     }
                 }
     ?>
