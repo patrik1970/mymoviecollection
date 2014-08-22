@@ -7,7 +7,7 @@ include ("header.php");
 	<!--Show movie list-->
 	<div id ="article">
 		<h2>Movielist</h2>
-		<p>This is a movielist with ratings</p>
+		<p>This is a Movielist with Ratings</p>
 		<div id="visaFilm">
 		
 <?php
