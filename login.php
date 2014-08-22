@@ -4,12 +4,13 @@
 include ("header.php");
 
 ?>
-
-	<h2>Login</h2>
+	<br>
+	<br>
 	<div id ="inloggning">
+		<h2 style="text-align:center;">Login</h2>
+		
 		<!--Form for login-->
 		<form  id = "form" action="login.php" method="POST" >
-			<fieldset style="hight: 400px;">
 			<div id="inneform">
 				<div id="visafelloggin">
 <?php			
@@ -20,9 +21,9 @@ include ("header.php");
 					$losenord = md5($losenord);//md5 hashing of the password.
 					
 					//Database management
-					//The connection against the database through mysql_connect("Server(host)","Username","Password","Database").
-					$databas1 = mysql_connect("Server(host)","Username","Password","Database");
-					mysql_select_db("Database");//Select the valid database.
+					//The connection against the database through mysql_connect("Server(host)","User","Password","Database").
+					$databas1 = mysql_connect("localhost","m11p0652","qwerty","m11p0652");
+					mysql_select_db("m11p0652");//Select the valid database.
 	
 					//The if-statement check the possibility to connect to the server.
 					if (!$databas1) 
@@ -67,20 +68,17 @@ include ("header.php");
 ?>
 				</div>
 				<!--Input fields for username-->
-				<p>Username:</p>
+				<p>Username: admin </p>
 				<input type="text"  name="anvandarnamn" id="anvandarnamn" class="textruta">
 				<p></p>
 				<!--Input fields for password-->
-				<p>Password:</p>
+				<p>Password: qwerty</p>
 				<input type="text" name="losenord" id="losenord" class="textruta">
 				<p></p>
 				<input type="submit"  id="loggain" value="Login">
 				</div>
-			</fieldset>
 		</form>
 	</div>
-
-		
 
 <?php
 //Get footer
