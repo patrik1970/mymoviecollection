@@ -22,8 +22,8 @@ include ("header.php");
 					
 					//Database management
 					//The connection against the database through mysql_connect("Server(host)","User","Password","Database").
-					$databas1 = mysql_connect("localhost","m11p0652","qwerty","m11p0652");
-					mysql_select_db("m11p0652");//Select the valid database.
+					$databas1 = mysql_connect("Server(host)","Username","Password","Database");
+					mysql_select_db("Database");//Select the valid database.
 	
 					//The if-statement check the possibility to connect to the server.
 					if (!$databas1) 
