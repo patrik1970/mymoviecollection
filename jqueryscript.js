@@ -41,7 +41,7 @@ $(document).ready(function(){
 			$('#imdbphp').css('background-color', "red");
 			$('#bildphp').css('background-color', "red");
 			$('#textareaphp').css('background-color', "red");
-			alert("Var vänlig fyll i fälten korrekt");
+			alert("Please fill in the fields correctly !");
 			$('#titelphp').css('background-color', "white");
 			$('#betygphp').css('background-color', "white");
 			$('#imdbphp').css('background-color', "white");
@@ -53,7 +53,7 @@ $(document).ready(function(){
 		 else if ($('#titelphp').val() == "")//The If-statement checks if the input field titelphp is filled.
 		{
 			$('#titelphp').css('background-color', "red");
-			alert("Var vänlig fyll i fältet korrekt");
+			alert("Please fill in a movietitle !");
 			$('#titelphp').css('background-color', "white");
 			return false
 		}
@@ -62,7 +62,7 @@ $(document).ready(function(){
 		 else if ($('#betygphp').val() === "")//The If-statement checks if the input field betygphp is filled.
 		{
 			$('#betygphp').css('background-color', "red");
-			alert("Var vänlig fyll i fältet korrekt");
+			alert("Please choose a Rating !");
 			$('#betygphp').css('background-color', "white");
 			return false
 		}
@@ -70,7 +70,7 @@ $(document).ready(function(){
 		else if ($('#imdbphp').val() === "")//The If-statement checks if the input field imdbphp is filled.
 		{
 			$('#imdbphp').css('background-color', "red");
-			alert("Var vänlig fyll i fältet korrekt");
+			alert("Please fill in a Link !");
 			$('#imdbphp').css('background-color', "white");
 			return false
 		}
@@ -78,7 +78,7 @@ $(document).ready(function(){
 		else if ($('#bildphp').val() === "")//The If-statement checks if the input field bildphp is filled.
 		{
 			$('#bildphp').css('background-color', "red");
-			alert("Var vänlig fyll i fältet korrekt");
+			alert("Please fill in a imageLink !");
 			$('#bildphp').css('background-color', "white");
 			return false
 		}
@@ -86,7 +86,7 @@ $(document).ready(function(){
 		else if ($('#textareaphp').val() === "")//The If-statement checks if the input field textareaphp is filled.
 		{
 			$('#textareaphp').css('background-color', "red");
-			alert("Var vänlig fyll i fältet korrekt");
+			alert("Please fill in some text about the movie !");
 			$('#textareaphp').css('background-color', "white");
 			return false
 		}
