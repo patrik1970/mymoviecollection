@@ -1,0 +1,29 @@
+Database configuration
+
+This is the database configuration for the Login and the Guestbook.
+
+Login
+Table:user
+column:anvandarnamn
+column:losenord
+
+SQL kod:	CREATE TABLE IF NOT EXISTS user (
+  		id int(11) NOT NULL AUTO_INCREMENT,
+  		anvandarnamn varchar(100) NOT NULL,
+  		losenord varchar(100) NOT NULL,
+  		PRIMARY KEY (id)
+		)
+
+Guestbook
+Table:gest
+column: namn
+column: meddelande
+column: tid
+
+SQL kod:	CREATE TABLE IF NOT EXISTS gest (
+  		id int(11) NOT NULL AUTO_INCREMENT,
+  		namn varchar(100) NOT NULL,
+  		meddelande text NOT NULL,
+  		tid timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  		PRIMARY KEY (id)
+		) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
