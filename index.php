@@ -31,7 +31,7 @@ include ("header.php");
 					<img src="image7.jpg" alt="Slideshow Image 7" />
 				</div>
 		
-		</div>
+			</div>
 			
 			
 <?php
