@@ -8,7 +8,7 @@
 
 		//Adds the image sequence in a variable.
 		var $next =  $active.next().length ? $active.next()
-        : $('#slideshow IMG:first');
+        	: $('#slideshow IMG:first');
 
 		$active.addClass('last-active');
 
