@@ -107,7 +107,6 @@ width:500px;
 height:400px;
 float:right;
 background-color:#eee;
-/*margin-top:-10px;*/
 }
 
 #slideshow 
@@ -208,7 +207,6 @@ border-bottom:2px solid black;
 width:600px;
 height:20px;
 color:red;
-
 }
 
 #inneform
@@ -217,7 +215,6 @@ width:100px;
 height:200px;
 margin-top:30px;
 margin-left:70px;
-
 }
 
 #inneform .textruta
@@ -239,6 +236,7 @@ background-color:#eee;
 {
 color:green;
 }
+
 #article
 {
 width:650px;
