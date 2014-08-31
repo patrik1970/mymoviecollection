@@ -45,7 +45,7 @@ include ("header.php");
 		
 		<!--Database management-->
 		<ul id="gastut">
-		<h3>Posted messages</h3>
+			<h3>Posted messages</h3>
 <?php
 			//Connection to the database.
 			$db = mysqli_connect("Server(Host)","Username","Password","Database");
@@ -54,7 +54,8 @@ include ("header.php");
 			$sql = mysqli_query($db, "SELECT * FROM gest ORDER BY id DESC");
 			
 			//Lists the contents of the database by criteria from the SQL question.
-			while($row = mysqli_fetch_assoc($sql)){
+			while($row = mysqli_fetch_assoc($sql))
+			{
 				echo "<li>".$row['namn'].": ".$row['meddelande'].": ".$row['tid']."</li><br>";
 				echo "<hr>";
 			}
