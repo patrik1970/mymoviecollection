@@ -37,12 +37,10 @@ $(document).ready(function(){
 					alert("Something went wrong with the saving");//If the value not were saved show this message.
 				}
 			},
-			error: function(xhr, error){
+			error: function(xhr, error)
+			{
 				alert("Could not connect to the server file");//If there was no connection to the server file show this message.
 			}
 		});
 	});
-
-	
-
 });
