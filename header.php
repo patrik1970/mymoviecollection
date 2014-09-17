@@ -17,12 +17,12 @@ session_start();
 <?php
 			//Connect a variable to CSS
 			$index = 'navmarker';
-			$gastbok = 'navmarker';
-			$filmtips = 'navmarker';
-			$filmer = 'navmarker';
-			$om = 'navmarker';
-			$kontakt = 'navmarker';
-			$loggain = 'navmarker';
+			$guestbook = 'navmarker';
+			$movietips = 'navmarker';
+			$movies = 'navmarker';
+			$about = 'navmarker';
+			$contact = 'navmarker';
+			$login = 'navmarker';
 			$admin = 'navmarker';
 			
 			//Check the file-name and remove the Prefix.
@@ -32,29 +32,29 @@ session_start();
 			{
 				$index = 'navmarkeractive';
 			}
-			else if ($navActive == "filmer")
+			else if ($navActive == "movies")
 			{
-				$filmer = 'navmarkeractive';
+				$movies = 'navmarkeractive';
 			}
-			else if ($navActive == "filmtips")
+			else if ($navActive == "movietips")
 			{
-				$filmtips = 'navmarkeractive';
+				$movietips = 'navmarkeractive';
 			}
-			else if ($navActive == "gastbok")
+			else if ($navActive == "guestbook")
 			{
-				$gastbok = 'navmarkeractive';
+				$guestbook = 'navmarkeractive';
 			}
-			else if ($navActive == "om")
+			else if ($navActive == "about")
 			{
-				$om = 'navmarkeractive';
+				$about = 'navmarkeractive';
 			}
-			else if ($navActive == "kontakt")
+			else if ($navActive == "contact")
 			{
-				$kontakt = 'navmarkeractive';
+				$contact = 'navmarkeractive';
 			}
-			else if ($navActive == "loggain")
+			else if ($navActive == "login")
 			{
-				$loggain = 'navmarkeractive';
+				$login = 'navmarkeractive';
 			}
 			else if ($navActive == "admin")
 			{
@@ -67,11 +67,11 @@ session_start();
 			<ul id="nav" >
 				<!--The class show the value in the variable.-->
 				<li><a class="<?php echo $index; ?>" href="index.php">Home</a></li>
-				<li><a class="<?php echo $filmer; ?>" href="movies.php">Movie</a></li>
-				<li><a class="<?php echo $filmtips; ?>" href="movietips.php">Movie Tips</a></li>
-				<li><a class="<?php echo $gastbok; ?>" href="guestbook.php">Guestbook</a></li>
-				<li><a class="<?php echo $om; ?>" href="about.php">About</a></li>
-				<li><a class="<?php echo $kontakt; ?>" href="contact.php">Contact</a></li>
+				<li><a class="<?php echo $movies; ?>" href="movies.php">Movie</a></li>
+				<li><a class="<?php echo $movietips; ?>" href="movietips.php">Movie Tips</a></li>
+				<li><a class="<?php echo $guestbook; ?>" href="guestbook.php">Guestbook</a></li>
+				<li><a class="<?php echo $about; ?>" href="about.php">About</a></li>
+				<li><a class="<?php echo $contact; ?>" href="contact.php">Contact</a></li>
 <?php
 				//Check the logout function.
 				//The if-statement check if something is in the logout.
@@ -92,7 +92,7 @@ session_start();
 				else
 				{
 					//If there is NOT a value in inloggad then show this in the menu.
-					echo "<li><a class="."echo $loggain;"." href="."loggain.php".">Login</a></li>";
+					echo "<li><a class="."echo $login;"." href="."login.php".">Login</a></li>";
 				}				
 ?>
 				
