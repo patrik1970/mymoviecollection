@@ -43,7 +43,7 @@ include ("header.php");
 						$losenord = mysql_real_escape_string($losenord);
 					
 						//Database question.
-						$fraga = "SELECT * FROM users WHERE anvandarnamn='$anvandarnamn' and losenord='$losenord'";
+						$fraga = "SELECT * FROM user WHERE anvandarnamn='$anvandarnamn' and losenord='$losenord'";
 						$resultat = mysql_query($fraga); 
     
 						// Mysql_num_row counts the row in the table.
