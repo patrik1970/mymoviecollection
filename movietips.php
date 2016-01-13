@@ -23,7 +23,7 @@ include ("header.php");
 <?php
 			//Database management.
 			//THe connection against the database through mysql_connect("Server(host)","Username","Password","Database").
-			$databas1 = mysql_connect("Server(host)","Username","Password","Database");
+			$databas1 = @mysql_connect("Server(host)","Username","Password","Database");
 			mysql_select_db("Database");//Select the valid database.
 	
 			//The if-statement check the possibility to connect to the server.
